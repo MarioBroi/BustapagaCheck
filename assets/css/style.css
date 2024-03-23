@@ -15,6 +15,7 @@
 
     .container {
         width: 80%;
+        height: 100%;
         background-color: white;
         border-radius: 10%;
         display: flex;

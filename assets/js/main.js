@@ -1,12 +1,14 @@
 function calculatePayroll() {
     // Prendi i valori dai campi di input
-    let hour = document.getElementById('hour').value;
-    let gross = document.getElementById('gross').value;
-    var tronc = document.getElementById('tronc').value;
-    var vat = document.getElementById('vat').value;
+    const hour = document.getElementById('hour').value;
+    const gross = document.getElementById('gross').value;
+    const tronc = document.getElementById('tronc').value;
+    const mainDed = document.getElementById('mainDed').value;
+    const troncDed = document.getElementById('troncDed').value;
+    let vat = mainDed + troncDed;
 
     // Verifica se tutti i valori sono stati inseriti
-    if (hour === '' || gross === '' || tronc === '' || vat === '') {
+    if (hour === '' || gross === '' || tronc === '' || mainDed === '' || troncDed === '') {
         alert('Inserisci entrambi i numeri.');
         return;
     }
